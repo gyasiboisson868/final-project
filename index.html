@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Major Finder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Find Your Ideal Major</h1>
+    <form id="questionnaire">
+      <label for="question1">1. Do you enjoy working with numbers?</label>
+      <select id="question1" name="question1">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+      <br>
+
+      <label for="question2">2. Are you interested in creative arts?</label>
+      <select id="question2" name="question2">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+      <br>
+
+      <button type="button" onclick="submitAnswers()">Submit</button>
+    </form>
+    <p id="result"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
